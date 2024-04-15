@@ -1,0 +1,55 @@
+<div class="p-4 md:p-5 bg-gradient-to-r from-teal-400 
+      via-teal-500 to-teal-600 dark:bg-gray-800">
+    <form [formGroup]="credentialForm" (submit)="crear(credentialForm)" class="space-y-4" action="#">
+        <div>
+            <label for="email" class="block mb-2 text-sm font-medium text-blue-50 dark:text-white">Correo</label>
+            <input type="text" formControlName="email" name="email" id="email" class="bg-gray-900 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="pepito perez" required />
+        </div>
+        <div>
+            <label for="password" class="block mb-2 text-sm font-medium text-blue-50 dark:text-white">Contraseña</label>
+            <input type="text"formControlName="password" name="password" id="password" placeholder="Verificación de bug con correos" class="bg-gray-900 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+        </div>
+        <div>
+           <label for="Tipo" class="block mb-2 text-sm font-medium text-white dark:text-white">Tipo</label>
+              <select id="tipo" formControlName="tipo" name="tipo"  class="bg-gray-900 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                 <!-- <option selected>Estado</option> -->
+                 <option value="Do">Docente</option>
+                 <option value="Es">Estudiante</option>
+              </select>
+        </div>
+        <div>
+            <label for="Ciudad" class="block mb-2 text-sm font-medium text-blue-50 dark:text-white">Ciudad</label>
+            <input type="text" formControlName="ciudad" name="ciudad" id="ciudad" placeholder="Ej:Armenia" class="bg-gray-900 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+        </div>
+        <div>
+            <label for="nombre" class="block mb-2 text-sm font-medium text-blue-50 dark:text-white">Nombre</label>
+            <input type="text" formControlName="nombre" name="nombre" id="nombre" placeholder="pepito" class="bg-gray-900 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+        </div>
+        <div>
+            <label for="apellido" class="block mb-2 text-sm font-medium text-blue-50 dark:text-white">Apellido</label>
+            <input type="text" formControlName="apellido" name="apellido" id="apellido" placeholder="perez" class="bg-gray-900 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+        </div>
+        <div>
+            <label for="telefono" class="block mb-2 text-sm font-medium text-blue-50 dark:text-white">Telefono</label>
+            <input type="text" formControlName="telefono" name="telefono" id="telefono" placeholder="ej:aaa@hotmail.com" class="bg-gray-900 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+        </div>
+        <div>
+            <label for="direccion" class="block mb-2 text-sm font-medium text-blue-50 dark:text-white">Dirección</label>
+            <input type="text" formControlName="direccion" name="direccion" id="direccion" placeholder="Ej: kr323#3-6sur" class="bg-gray-900 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+        </div>
+        <div class="flex justify-between">
+            <!-- <div class="flex items-start">
+                <div class="flex items-center h-5">
+                    <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+                </div>
+                <label for="remember" class="ms-2 text-sm font-medium text-blue-50 dark:text-gray-300">Remember me</label>
+            </div> -->
+            <!-- <a href="#" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a> -->
+        </div>
+        <button type="submit" class="w-full text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 
+        bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800  ">Registrarse</button>
+        <!-- <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+            Not registered? <a href="#" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
+        </div> -->
+    </form>
+</div>
